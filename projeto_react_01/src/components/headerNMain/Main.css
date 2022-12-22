@@ -1,0 +1,25 @@
+#generalBoxes {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.mainBox {
+	border: 1px solid black;
+	margin: 5px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.rightBox {
+	border: 1px solid black;
+	margin: 5px;
+}
+.mainBox > div {
+	width: 60px;
+	height: 60px;
+	border: 1px solid black;
+	margin: 20px;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
