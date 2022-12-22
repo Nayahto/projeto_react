@@ -1,13 +1,21 @@
+/* CSS PARA ESTILOS GERAIS*/
 body {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 h1 {
 	text-align: center;
-	color: white;
 	margin: 0;
-	padding: 40px;
-	border-bottom: 1px solid yellow;
-	background-color: black;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	padding: 5px;
+	text-decoration: none;
+	color: white;
 }
