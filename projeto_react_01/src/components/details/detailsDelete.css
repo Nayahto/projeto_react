@@ -1,0 +1,11 @@
+.personalizarDetalhes {
+  color: white;
+  display: grid;
+  justify-items: center;
+}
+.personalizarDetalhes > p {
+  text-align: center;
+}
+#personalizarParagrafo {
+  width: 800px;
+}

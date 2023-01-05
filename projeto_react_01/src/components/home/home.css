@@ -1,19 +1,59 @@
 .anotacoes {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 #personalizarH2 {
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 .personalizarAnotacoes {
-	border: black solid 1px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	padding: 10px;
+  border-radius: 5px;
+  background-color: #52b69a;
+  border: black solid 1px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+  height: 100px;
+  width: 400px;
+  overflow: hidden;
 }
 
-.personalizarAnotacoes > h2 {
-	margin: 5px;
+.personalizarAnotacoes:hover {
+  box-shadow: 4px 4px 2px gray;
+  border-radius: 5px;
+  background-color: #52b69a;
+  border: black solid 1px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+  height: 100px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.personalizarAnotacoes > h2,
+p {
+  margin: 5px;
+}
+
+.personalizarTexto {
+  color: white;
+  background-color: rgb(73, 71, 71);
+}
+.personalizarTexto p {
+  margin: 0px;
+}
+
+.personalizarAnotacoes button {
+  color: white;
+  background-color: #313131;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.botao {
+  margin-right: 10px;
 }
