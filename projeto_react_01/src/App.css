@@ -1,9 +1,10 @@
 /* CSS PARA ESTILOS GERAIS*/
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 body {
+  overflow-x: hidden;
   background-color: #313131;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -13,13 +14,22 @@ h1 {
   margin: 0;
 }
 p {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 a {
   font-size: 20px;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   padding: 5px;
   text-decoration: none;
   color: white;
+}
+@media only screen and (max-width: 790px) {
+  body {
+    overflow-x: hidden;
+    background-color: #313131;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
 }

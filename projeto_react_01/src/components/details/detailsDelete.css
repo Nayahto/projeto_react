@@ -2,10 +2,51 @@
   color: white;
   display: grid;
   justify-items: center;
+  border: 1px solid white;
 }
 .personalizarDetalhes > p {
   text-align: center;
 }
-#personalizarParagrafo {
-  width: 800px;
+#personalizarBotoes {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  justify-content: center;
+}
+#personalizarLink {
+  font-family: Arial;
+  font-size: 13.3333px;
+  color: black;
+}
+#personalizarParagrafo button {
+  margin: 10px 50%;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#personalizarParagrafo button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 790px) {
+  #personalizarParagrafo {
+    font-size: 10px;
+  }
+  .personalizarDetalhes {
+    color: white;
+    display: grid;
+    justify-items: center;
+    border: 1px solid white;
+    font-size: 15px;
+  }
+  #personalizarParagrafo button {
+    font-size: 10px;
+    margin: 10px 50%;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #personalizarLink {
+    font-family: Arial;
+    font-size: 10px;
+    color: black;
+  }
 }
