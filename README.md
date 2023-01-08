@@ -75,7 +75,7 @@ Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/d
 
 ### `creditos do projeto para o canal Net Ninja`: `https://www.youtube.com/@NetNinja`
 
-Dependencies:
+### Dependencies:
 
 @testing-library/jest-dom ^5.16.5,
 
@@ -93,7 +93,7 @@ react-scripts 5.0.1,
 
 web-vitals ^2.1.4
 
-DevDependencies
+### DevDependencies
 
 eslint ^8.2.0,
 
