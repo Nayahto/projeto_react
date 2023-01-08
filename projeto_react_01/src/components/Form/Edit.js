@@ -1,12 +1,27 @@
+// importes necessarios para o funcionamento do componente//
+
 import { useParams, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
+// componente para a edicao do item pelo identificador//
 function Edit() {
+  /* useParams é um React Router Hook que permite acessar parâmetros dinâmicos na URL.
+ fonte: https://medium.com/ */
   const { id } = useParams();
+
+  /* O useState é um Hook de controle de estado para componentes React
+  fonte: https://dev.to/ */
   const [pendente, setPendente] = useState(false);
   const [title, setTitle] = useState('');
   const [text, setText] = useState('');
+
+  /* O useHistory é a um componente que é usado dentro de uma página para levar o usuário para outra rota do site.
+ Para usa-la, deve-se primeiro instancia-la em uma variável,
+  depois usar a função push e colocar a rota que você quer.
+  fonte: https://lucassr.medium.com */
   const history = useHistory();
+
+  // funcao responsavel pela requisicao para a rota de edicao//
   const handleSubmit = (e) => {
     e.preventDefault();
     const postBody = { title, text };
@@ -23,6 +38,7 @@ function Edit() {
     history.push('/');
   };
   return (
+    // construcao do componente React//
     <>
       <div id="personalizarFormContainer">
         <h2>Anotação</h2>
@@ -56,4 +72,8 @@ function Edit() {
   );
 }
 
+// exportacao da funcao para que ela possa ser usada em outras partes do projeto//
 export default Edit;
+
+/* #OBSERVACAO: ainda nessa pasta porem outro arquivo é possivel notar um arquivo css que e responsavel
+ pela estilizacao apenas das classes e identificadores desse arquivo*/

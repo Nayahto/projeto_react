@@ -1,5 +1,10 @@
+// importes necessarios para o funcionamento do componente//
 import { useEffect, useState } from 'react';
 
+/* funcao responsavel por todas as requisicoes
+e uma funcao que vai funcionar como uma funcao core para todas as requisicoes,
+com suas particularidades dependendo de onde ele seja instanciada
+*/
 const FecthData = (url) => {
   const [anotacoes, setAnotacoes] = useState([]);
   const [pendente, setPendente] = useState(true);
@@ -27,5 +32,5 @@ const FecthData = (url) => {
 
   return [anotacoes, pendente, erro];
 };
-
+// exportacao da funcao para que ela possa ser usada em outras partes do projeto//
 export default FecthData;

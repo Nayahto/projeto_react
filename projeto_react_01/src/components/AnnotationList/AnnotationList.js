@@ -1,6 +1,8 @@
+// importes necessarios para o funcionamento do componente//
+
 import { Link } from 'react-router-dom';
 import FecthData from '../../functions/fetch';
-
+// funcao responsavel pela listagem de todas as anotacoes//
 const AnnotationList = () => {
   const [anotacoes, pendente, erro] = FecthData('http://localhost:3002/todos');
 
@@ -29,5 +31,5 @@ const AnnotationList = () => {
     </>
   );
 };
-
+// exportacao da funcao para que ela possa ser usada em outras partes do projeto//
 export default AnnotationList;
